@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.2/dist/flowbite.min.css"/>
+    <script src="https://unpkg.com/flowbite@1.3.2/dist/flowbite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+
+            theme: {
+                screens: {
+                    'xsm': '200px',
+                    'ssm': '300px',
+                    'lsm': '400px',
+                    'sm': '600px',
+                    'md': '1000px',
+                    'lg': '1030px',
+                    'xl': '1300px',
+                    '2xl': '1550px',
+                },
+                container: {
+                    center: true,
+                    margin: {},
+                },
+            }
+        }
+    </script>
+    <style>
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);
+    </style>
+</head>
+<body>
+<div class=" xsm:container xsm:mx-auto grid grid-rows-1 grid-cols-2 grid-flow-col  mt-6">
+    <div class="inline-flex">
+        <img class="w-30 h-15 float-none" src="/logo/logo.png" width="183" height="46">
+    </div>
+    <div>
+        <button
+                class="bg-cyan-500 hover:bg-cyan-700 text-white font-bold py-2 px-4 border border-cyan-500 rounded float-right" id="creatAccount">
+            create account
+        </button>
+    </div>
+</div>
+<div class=" xsm:container xsm:mx-auto grid grid-rows-1 grid-cols-1 grid-flow-col">
+    <div class="w-full mx-auto bg-white px-5 py-10 text-gray-600 mb-10">
+        <div class="text-center max-w-xl mx-auto">
+            <button id="dropdownRightButton" data-dropdown-toggle="dropdownRight" data-dropdown-placement="right"
+                    class="mr-3 mb-3 md:mb-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4  font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    type="button">Dropdown right
+                <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                          clip-rule="evenodd"></path>
+                </svg>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div id="dropdownRight"
+                 class="hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+                <ul class="py-1" aria-labelledby="dropdownRightButton">
+                    <li>
+                        <a href="#eng"
+                           class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">English</a>
+                    </li>
+                    <li>
+                        <a href="#fa"
+                           class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">فارسی</a>
+                    </li>
+
+                </ul>
+            </div>
+            <h2 class="text-center text-2xl font-bold uppercase mb-2">train.mp4</h2>
+            <h3 class="text-xl font-medium mb-2">some discription for file name</h3>
+            <h5 class="font-medium mb-5">5GB</h5>
+        </div>
+        <div class="w-full md:flex mb-5 justify-center">
+            <div
+                    class="w-full md:w-1/4 md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-3 mx-auto md:-mx-3 md:my-3 rounded-md shadow-lg shadow-gray-600 md:relative 2xl:z-50 md:flex md:flex-col">
+                <div class="w-full flex-grow">
+                    <h2 class="text-center font-bold text-4xl md:text-5xl mb-2">Slow</h2>
+                    <ul class="text-sm px-5 mb-8">
+                        <li class="leading-tight"><i class="mdi mdi-close text-lg"></i> Download Half Price</li>
+                        <li class="leading-tight"><i class="mdi mdi-close text-lg"></i> Fast download</li>
+                        <li class="leading-tight"><i class="mdi mdi-close text-lg"></i> Saving time</li>
+                    </ul>
+                </div>
+                <div class="w-full">
+                    <button
+                            class="font-bold bg-gray-600 hover:bg-gray-700 text-white rounded-md px-10 py-2 transition-colors w-full">
+                        Slow Download
+                    </button>
+                </div>
+            </div>
+            <div
+                    class="w-full md:w-1/4 md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-3 mx-auto md:-mx-3 md:mb-0 rounded-md shadow-lg shadow-gray-600 md:relative 2xl:z-50 md:flex md:flex-col">
+                <div class="w-full flex-grow">
+                    <h2 class="text-center font-bold text-4xl md:text-5xl text-cyan-500 mb-2">Fast</h2>
+                    <p class="text-center font-bold mb-5">
+                        <a href="#"
+                           class="hover:underline hover:text-gray-700 transition-all transform hover:scale-110 inline-block">Read
+                            more<i class="mdi mdi-arrow-right-thick ml-1"></i></a>
+                    </p>
+                    <ul class="text-sm px-5 mb-8">
+                        <li class="leading-tight"><i class="mdi mdi-check-bold text-lg"></i> Download Half Price</li>
+                        <li class="leading-tight"><i class="mdi mdi-check-bold text-lg"></i> Fast download</li>
+                        <li class="leading-tight"><i class="mdi mdi-check-bold text-lg"></i> Saving time</li>
+                    </ul>
+                </div>
+                <div class="w-full">
+                    <button
+                            class="font-bold bg-cyan-500 hover:bg-cyan-600 text-white rounded-md px-10 py-2 transition-colors w-full"
+                            type="button" data-modal-toggle="defaultModal">
+                        Saving Time
+                    </button>
+                    <div id="defaultModal" aria-hidden="true"
+                         class="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center h-modal md:h-full md:inset-0">
+                        <div class=" relative px-4 w-full max-w-2xl h-full md:h-auto">
+                            <div class="relative rounded-lg  justify-center">
+                                <div
+                                        class="w-full md:flex mb-5 justify-center  px-10 py-8">
+                                    <form action="" method="post" id="form-post" enctype="multipart/form-data"
+                                          class="bg-white w-full 2xl:w-1/4 md:max-w-none bg-white px-8 2xl:px-10 py-8 2xl:py-10 mb-3 mx-auto md:-mx-3 md:mb-0 rounded-xl shadow-lg shadow-gray-600 md:relative max-w-sm">
+                                        <div class="space-y-4">
+                                            <div class="flex justify-between mb-2">
+                                                <img class="w-30 h-15  text-center" src="/logo/logo.png" width="183"
+                                                     height="46">
+                                                <button type="button"
+                                                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                                        data-modal-toggle="defaultModal">
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd"
+                                                              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                                              clip-rule="evenodd"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <label class="block mb-2 text-sm">Email address</label>
+                                                <input type="email" name="email" placeholder="email"
+                                                       class="w-full px-3 py-2 text-blue-800 border border-blue-300 rounded-md bg-blue-50 focus:outline-none focus:ring-1 focus:ring-blue-300">
+                                            </div>
+                                            <div>
+                                                <div class="flex justify-between mb-2">
+                                                    <label class="text-sm">Password</label>
+                                                    <a href="#" class="text-xs text-blue-600 hover:underline">Forgot
+                                                        password?</a>
+                                                </div>
+                                                <input type="password" name="password" placeholder="password"
+                                                       class="w-full px-3 py-2 text-blue-800 border border-blue-300 rounded-md bg-blue-50 focus:outline-none focus:ring-1 focus:ring-blue-300">
+                                            </div>
+                                        </div>
+                                        <div class="mt-6 space-y-2">
+                                            <div class="flex gap-x-2">
+                                                <button id="login"
+                                                        class="w-full px-8 py-3 text-blue-100 bg-blue-600 rounded-md">
+                                                    login
+                                                </button>
+                                            </div>
+                                            <p class="px-6 text-sm text-center text-coolGray-600">Don't have an account
+                                                yet?
+                                                <a href="#" class="text-blue-600 hover:underline">create account</a>.
+                                            </p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
