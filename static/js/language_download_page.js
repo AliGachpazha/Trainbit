@@ -1,4 +1,18 @@
+document.cookie = "lang=1; SameSite=None; Secure";
 
+function cookieLanguage(){
+            let x = document.cookie;
+        const cookieValue = document.cookie
+          .split('; ')
+          .find(row => row.startsWith('lang='))
+          .split('=')[1];
+            if (cookieValue === "1") {
+                changeLanguage("fa")
+            };
+            if (cookieValue === "2") {
+                changeLanguage("eng")
+            };
+}
 
 function changeLanguage(language) {
             if (language === "fa") {
