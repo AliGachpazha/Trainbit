@@ -1,3 +1,5 @@
+
+
 function changeLanguage(language) {
             if (language === "fa") {
                 document.getElementById("creatAccount").innerHTML = "ایجاد حساب"
