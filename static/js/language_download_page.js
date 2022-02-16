@@ -31,10 +31,10 @@ function changeLanguage(language) {
                     "                          clip-rule=\"evenodd\"></path>\n" +
                     "                </svg>"
                 document.getElementById("title").innerHTML = "change language"
-                document.getElementById("eng").innerHTML = "English"
-                document.getElementById("eng").innerHTML += "<img src=\"/logo/en-US.png\" class='mr-1'>"
-                document.getElementById("fa").innerHTML = "Farsi"
-                document.getElementById("fa").innerHTML += "<img src=\"/logo/fa-IR.png\" class='mr-1'>"
+                document.getElementById("eng").innerHTML = "<img src=\"/logo/en-US.png\" class='mr-1'>"
+                document.getElementById("eng").innerHTML += "English"
+                document.getElementById("fa").innerHTML = "<img src=\"/logo/fa-IR.png\" class='mr-1'>"
+                document.getElementById("fa").innerHTML += "Farsi"
                 document.getElementById("download_name").innerHTML = "<svg class=\"fill-current w-4 h-4 mr-2 \" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\">\n" +
                     "                    <path d=\"M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z\"/>\n" +
                     "                </svg>"

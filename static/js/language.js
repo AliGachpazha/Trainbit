@@ -58,10 +58,10 @@
                     "                          clip-rule=\"evenodd\"></path>\n" +
                     "                </svg>"
                 document.getElementById("title").innerHTML = "change language"
-                document.getElementById("eng").innerHTML = "English"
-                document.getElementById("eng").innerHTML += "<img src=\"/logo/en-US.png\" class='mr-1'>"
-                document.getElementById("fa").innerHTML = "Farsi"
-                document.getElementById("fa").innerHTML += "<img src=\"/logo/fa-IR.png\" class='mr-1'>"
+                document.getElementById("eng").innerHTML = "<img src=\"/logo/en-US.png\" class='mr-1'>"
+                document.getElementById("eng").innerHTML += "English"
+                document.getElementById("fa").innerHTML = "<img src=\"/logo/fa-IR.png\" class='mr-1'>"
+                document.getElementById("fa").innerHTML += "Farsi"
                 document.getElementById("form_mark").dir = "rtl"
                 document.getElementById("slow").innerHTML = "Slow"
                 document.getElementById("slow_form").classList.remove("text-right")
