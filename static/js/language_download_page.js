@@ -34,7 +34,6 @@ function changeLanguage(language) {
                     "                </svg>"
                 document.getElementById("password_field").dir = "rtl";
                 document.getElementsByName('password')[0].placeholder = 'رمز عبور';
-                document.getElementById("password_download").innerHTML = "دانلود"
                 console.log("success change to farsi")
             }
             ;
@@ -57,7 +56,6 @@ function changeLanguage(language) {
                 document.getElementById("download_name").innerHTML += "<span >Download</span>"
                 document.getElementById("password_field").dir = "ltr";
                 document.getElementsByName('password')[0].placeholder = 'password';
-                document.getElementById("password_download").innerHTML = "Download"
                 console.log("success change to english")
             }
         }
